@@ -19,8 +19,8 @@ export class Server {
 
 
     setConfiguration(){
-    //    sequelize.sync({force: true});
-       sequelize.authenticate();
+        //MySQL DB configuration with sequelize ORM.
+       sequelize.sync({force: true});
     }
 
     setRoutes(){

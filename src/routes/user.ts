@@ -10,8 +10,6 @@ class UserRoutes {
         this.router = Router();
         this.get();
         this.post();
-        this.put();
-        this.delete();
     }
 
     get(){
@@ -21,15 +19,6 @@ class UserRoutes {
     post(){
         this.router.post('/signup',UserValidators.signup(), GlobalMiddleWare.checkError, UserControllers.create);
     }
-
-    put(){
-        //Update user
-    }
-
-    delete(){
-        //delete user
-    }
-
     
 }
 

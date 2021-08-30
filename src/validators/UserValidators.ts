@@ -19,6 +19,9 @@ export class UserValidators {
                     })
                 })]; 
     }
+
+
+    
     static login(){
         return [query('email', 'Email is required').isEmail().custom((email, {req}) => {
             return User.findOne({where: {email: req.query.email}}).then(user => {   
