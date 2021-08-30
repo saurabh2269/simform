@@ -2,6 +2,7 @@ import { Router } from "express";
 import { CategoriesValidators } from "../validators/Categories";
 import { GlobalMiddleWare } from "../middlewares/GlobalMiddleWare";
 import { CategoriesControllers } from "../controllers/categories";
+import { TaskControllers } from "../controllers/task";
 
 
 
@@ -14,11 +15,10 @@ class CatregoryRoutes {
         this.post();
         this.put();
         this.delete();
-        this.patch();
     }
 
     get(){
-        this.router.get('/list',GlobalMiddleWare.authenticate, CategoriesControllers.getList);
+        this.router.get('/list/:cat_id',GlobalMiddleWare.authenticate, CategoriesControllers.getList);
     }
 
     post(){
@@ -26,16 +26,14 @@ class CatregoryRoutes {
     }
 
     put(){
-
+        this.router.put('/update/:cat_id',GlobalMiddleWare.authenticate, CategoriesValidators.update(), GlobalMiddleWare.checkError, CategoriesControllers.update);
     }
 
     delete(){
-
+        this.router.delete('/delete/:cat_id',GlobalMiddleWare.authenticate, CategoriesValidators.delete(), GlobalMiddleWare.checkError, CategoriesControllers.delete);
     }
 
-    patch(){
-
-    }
+    
 }
 
 export default new CatregoryRoutes().router;

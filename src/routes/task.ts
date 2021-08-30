@@ -2,6 +2,7 @@ import { Router } from "express";
 import { TaskControllers } from "../controllers/task";
 import { UserControllers } from "../controllers/user";
 import { GlobalMiddleWare } from "../middlewares/GlobalMiddleWare";
+import { TaskValidators } from "../validators/TaskValidators";
 import { UserValidators } from "../validators/UserValidators";
 
 class TaskRoutes {
@@ -20,15 +21,15 @@ class TaskRoutes {
     }
 
     post(){
-        this.router.post('/create',UserValidators.signup(), GlobalMiddleWare.checkError, UserControllers.create);
+        this.router.post('/create',GlobalMiddleWare.authenticate, TaskValidators.create ,GlobalMiddleWare.checkError, TaskControllers.create);
     }
 
     put(){
-        // this.router.post('/update',UserValidators.signup(), GlobalMiddleWare.checkError, UserControllers.create);
+        this.router.put('/update/:cat_id',GlobalMiddleWare.authenticate, TaskValidators.update, GlobalMiddleWare.checkError, TaskControllers.update);
     }
 
     delete(){
-        // this.router.post('/destroy',UserValidators.signup(), GlobalMiddleWare.checkError, UserControllers.create);
+        this.router.delete('/delete/:cat_id',GlobalMiddleWare.authenticate, TaskValidators.delete, GlobalMiddleWare.checkError, TaskControllers.delete);
     }
 
     

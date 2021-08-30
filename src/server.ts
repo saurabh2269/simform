@@ -19,7 +19,7 @@ export class Server {
 
 
     setConfiguration(){
-       sequelize.authenticate();
+       sequelize.sync({force: true});
     }
 
     setRoutes(){
