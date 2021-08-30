@@ -9,22 +9,22 @@ export class TaskValidators {
     }
 
     static update(){
-        return [body('task_name', 'Task name is required').isString(),
-        param('id', 'Id is required').custom((id, {req}) => {
-            return Task.findOne({where: {id: req.query.id}}).then(task => {
+        return [
+        param('task_id', 'task_id is required').custom((task_id, {req}) => {
+            return Task.findOne({where: {id: req.params.task_id}}).then(task => {
                 if(task){
                     req.task = task;
                     return true;
                 } else {
-                    throw new Error('Post Does Not Exist');
+                    throw new Error('Task Does Not Exist');
                 }
             })
         })]; 
     }
 
     static delete(){
-        return [param('id', 'Id is required').custom((id, {req}) => {
-            return Task.findOne({where: {id: req.param.id}}).then(task => {
+        return [param('task_id', 'task_id is required').custom((task_id, {req}) => {
+            return Task.findOne({where: {id: req.params.task_id}}).then(task => {
                 if(task){
                     req.task = task;
                     return true;

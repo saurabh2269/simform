@@ -8,8 +8,11 @@ export class TaskControllers{
 
 
     static async create(req, res, next){
-        const category = await Task.create({task_name:req.body.task_name, description:req.body.description, user_id: req.user.user_id, cat_id:req.body.cat_id});
-        res.json(category);
+        console.log('task create');
+        
+        const task = await Task.create({task_name:req.body.task_name, description:req.body.description, 
+            user_id: req.user.user_id, cat_id:req.body.cat_id});
+        res.json(task);
     }
 
     static async update(req, res, next){

@@ -18,7 +18,7 @@ class CatregoryRoutes {
     }
 
     get(){
-        this.router.get('/list/:cat_id',GlobalMiddleWare.authenticate, CategoriesControllers.getList);
+        this.router.get('/list',GlobalMiddleWare.authenticate, CategoriesControllers.getList);
     }
 
     post(){

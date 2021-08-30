@@ -21,15 +21,15 @@ class TaskRoutes {
     }
 
     post(){
-        this.router.post('/create',GlobalMiddleWare.authenticate, TaskValidators.create ,GlobalMiddleWare.checkError, TaskControllers.create);
+        this.router.post('/create',GlobalMiddleWare.authenticate, TaskValidators.create() ,GlobalMiddleWare.checkError, TaskControllers.create);
     }
 
     put(){
-        this.router.put('/update/:cat_id',GlobalMiddleWare.authenticate, TaskValidators.update, GlobalMiddleWare.checkError, TaskControllers.update);
+        this.router.put('/update/:task_id',GlobalMiddleWare.authenticate, TaskValidators.update(), GlobalMiddleWare.checkError, TaskControllers.update);
     }
 
     delete(){
-        this.router.delete('/delete/:cat_id',GlobalMiddleWare.authenticate, TaskValidators.delete, GlobalMiddleWare.checkError, TaskControllers.delete);
+        this.router.delete('/delete/:task_id',GlobalMiddleWare.authenticate, TaskValidators.delete(), GlobalMiddleWare.checkError, TaskControllers.delete);
     }
 
     
