@@ -10,9 +10,9 @@
 
         static update(){
             return [param('cat_id', 'Id is required').custom((cat_id, {req}) => {
-                console.log(req.param);
+                console.log("123",req.params);
                 
-                return Categories.findOne({where: {id: req.param.cat_id}}).then(category => {
+                return Categories.findOne({where: {id: req.params.cat_id}}).then(category => {
                     if(category){
                         req.category = category;
                         return true;

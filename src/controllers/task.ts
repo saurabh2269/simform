@@ -13,13 +13,14 @@ export class TaskControllers{
     }
 
     static async update(req, res, next){
-        const category = await Task.update({task_name:req.body.task_name, description: req.body.description},
+        const task = await Task.update({task_name:req.body.task_name, description: req.body.description},
             {where:{id: req.params.task_id}});
-        res.json(category);
+            res.json('Success');
     }
 
 
     static async delete(req, res, next){
         await Task.destroy({where:{id: req.params.task_id}});
+        res.json('Success');
     }
 }

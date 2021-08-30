@@ -3,8 +3,6 @@ import * as Jwt from 'jsonwebtoken';
 
 export class GlobalMiddleWare {
     static checkError(req, res, next) {
-        console.log('Global error');
-        
         const error = validationResult(req);
         if (!error.isEmpty()) {
             next(new Error(error.array()[0].msg));

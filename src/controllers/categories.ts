@@ -16,13 +16,14 @@ export class CategoriesControllers{
     static async update(req, res, next){
         const category = await Categories.update({category_name:req.body.category_name, about: req.body.about},
             {where:{id: req.params.cat_id}});
-        res.json(category);
+        res.json('Success');
     }
 
 
     static async delete(req, res, next){
         await Categories.destroy({where:{id: req.params.cat_id}}).then(async () => {
             await Task.destroy({where:{cat_id: req.params.cat_id}});
+            res.json('Success')
         })
     }
 
