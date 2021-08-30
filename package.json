@@ -1,0 +1,28 @@
+{
+  "name": "node_js_assigniment",
+  "version": "1.0.0",
+  "description": "\u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabh2269/simform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurabh2269/simform/issues"
+  },
+  "homepage": "https://github.com/saurabh2269/simform#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.7.6",
+    "@types/nodemon": "^1.19.1",
+    "express": "^4.17.1",
+    "node": "^16.6.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
