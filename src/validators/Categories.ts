@@ -24,8 +24,8 @@
         }
 
         static delete(){
-            return [param('id', 'Id is required').custom((id, {req}) => {
-                return Categories.findOne({where: {id: req.param.id}}).then(category => {
+            return [param('cat_id', 'cat_id is required').custom((cat_id, {req}) => {
+                return Categories.findOne({where: {id: req.params.cat_id}}).then(category => {
                     if(category){
                         req.category = category;
                         return true;

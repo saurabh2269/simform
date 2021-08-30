@@ -1,0 +1,382 @@
+{
+	"id": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+	"name": "simform",
+	"description": "",
+	"order": [
+		"afdd5d89-3b7a-1d56-d208-19c4bfc767d7",
+		"73c86357-5eac-1709-b7a0-2acab57dc875",
+		"80199f2b-75cf-a5ef-787a-366544e37f86",
+		"3b76e9ed-0935-028e-fa65-08f4e92efd6a",
+		"ee8c917f-ab22-99a5-7589-2ee3118952a8",
+		"7edb3d20-5037-fa66-5746-94eb1836fc3e",
+		"4838e5de-d669-74ca-1fd3-97a8eddf55a8",
+		"521d5cff-1ce2-92fb-e025-0155b8548774",
+		"8bfa8d18-58ff-2301-9a42-e95aaf4ef030",
+		"39a5bf99-efbf-9b33-ce06-506eca2049eb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1630339821676,
+	"owner": "4163980",
+	"public": false,
+	"requests": [
+		{
+			"id": "39a5bf99-efbf-9b33-ce06-506eca2049eb",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/task/delete/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:5000/api/task/delete/1",
+			"description": "Task delete API",
+			"descriptionFormat": "html",
+			"time": 1630344973692,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3b76e9ed-0935-028e-fa65-08f4e92efd6a",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/categories/update/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:5000/api/categories/update/1",
+			"description": "Categoru update API",
+			"descriptionFormat": "html",
+			"time": 1630343074281,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"category_name\": \"groccesary\",\n    \"about\": \"Category of grocessary item updated\"\n}"
+		},
+		{
+			"id": "4838e5de-d669-74ca-1fd3-97a8eddf55a8",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/task/list/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:5000/api/task/list/2",
+			"description": "list All the task under given category",
+			"descriptionFormat": "html",
+			"time": 1630343883830,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "521d5cff-1ce2-92fb-e025-0155b8548774",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/task/update/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:5000/api/task/update/1",
+			"description": "Update task description or topic",
+			"descriptionFormat": "html",
+			"time": 1630344234280,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"task_name\": \"office1\",\n\t\"description\": \"create PPT update\"\n}"
+		},
+		{
+			"id": "73c86357-5eac-1709-b7a0-2acab57dc875",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:5000/api/user/login?email=singhsaurabh2269@gmail.com&password=Saurabh@1508",
+			"queryParams": [
+				{
+					"key": "email",
+					"value": "singhsaurabh2269@gmail.com",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "Saurabh@1508",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1630340089015,
+			"name": "user login",
+			"description": "user login with email password",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"responses": []
+		},
+		{
+			"id": "7edb3d20-5037-fa66-5746-94eb1836fc3e",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/task/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:5000/api/task/create",
+			"description": "Create task under Category",
+			"descriptionFormat": "html",
+			"time": 1630343825166,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"task_name\": \"office1\",\n\t\"description\": \"create PPT\",\n\t\"cat_id\": \"2\"\n}"
+		},
+		{
+			"id": "80199f2b-75cf-a5ef-787a-366544e37f86",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQwMzgyLCJleHAiOjE2NDA3MDgzODJ9.diNr4ZR6sq0RDRie4KZt2rVVQJD9PYdVaM_2tjU99JQ\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQwMzgyLCJleHAiOjE2NDA3MDgzODJ9.diNr4ZR6sq0RDRie4KZt2rVVQJD9PYdVaM_2tjU99JQ",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/categories/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:5000/api/categories/create",
+			"description": "Category create API",
+			"descriptionFormat": "html",
+			"time": 1630340438494,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"category_name\": \"groccesary\",\n    \"about\": \"Category of grocessary item\"\n}"
+		},
+		{
+			"id": "8bfa8d18-58ff-2301-9a42-e95aaf4ef030",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/categories/delete/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:5000/api/categories/delete/1",
+			"description": "Category delete API ",
+			"descriptionFormat": "html",
+			"time": 1630344912340,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "afdd5d89-3b7a-1d56-d208-19c4bfc767d7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/user/signup",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1630340378723,
+			"name": "user signup",
+			"description": "user signup with usename , email , password",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Saurabh\",\n    \"email\": \"singhsaurabh2269@gmail.com\",\n    \"password\": \"Saurabh@1508\"\n}"
+		},
+		{
+			"id": "ee8c917f-ab22-99a5-7589-2ee3118952a8",
+			"headers": "authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6InNpbmdoc2F1cmFiaDIyNjlAZ21haWwuY29tIiwiaWF0IjoxNjMwMzQxNTA3LCJleHAiOjE2NDA3MDk1MDd9.q97bHGaO83PHq-jrY3FYlLETJ8umJPhjmBZuOMCKRNo",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/categories/list",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "279a6c00-ac34-7388-5ac3-71c8bf79ead4",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:5000/api/categories/list",
+			"description": "get All Categories for given user",
+			"descriptionFormat": "html",
+			"time": 1630343257925,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
